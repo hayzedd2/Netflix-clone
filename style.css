@@ -1,0 +1,576 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/f1c3c4eb-2fea-42c7-9ebd-1c093bd8a69d/5b6cb1ca-7390-4e73-90f7-f291ee7bba80/NG-en-20230403-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  background-position: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.logo img {
+  width: 50%;
+}
+.button {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.signIn {
+  background-color: red;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.53;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+.signIn:hover {
+  background-color: rgb(208, 5, 5);
+}
+.hero-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 250px;
+}
+.hero-text h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.hero-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 23px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.hero-text p {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.hero-input {
+  margin-top: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; */
+}
+
+#email-input {
+  background-color: transparent;
+  padding: 20px;
+  width: 35%;
+  border-radius: 2px;
+  height: 7vh;
+  border: 0.5px solid gainsboro;
+  margin-right: 2px;
+  font-size: 16px;
+  color: white;
+}
+#email-input::placeholder {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.getStarted {
+  background-color: red;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  border-radius: 2px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+.getStarted:hover {
+  background-color: rgb(208, 5, 5);
+}
+
+.feature-1-section {
+  padding: 100px 0 100px 0;
+  border-bottom: 3px solid gray;
+}
+.feature-1-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature-1-text {
+  grid-column: span 6;
+  padding: 150px 0 150px 0;
+}
+.feature-1-text h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.feature-1-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.feature-1-img {
+  grid-column: span 6;
+  position: relative;
+}
+.tv-img {
+  z-index: 99;
+}
+.tv-video {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  z-index: -2;
+}
+
+/*  */
+.feature-2-section {
+  padding: 70px 0 100px 0;
+  border-bottom: 3px solid gray;
+}
+
+.feature-2-grid {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-2-text {
+  flex-basis: 50%;
+  padding: 150px 0 150px 0;
+}
+.feature-2-img {
+  flex-basis: 50%;
+  position: relative;
+}
+.feature-2-banner {
+  width: 95%;
+  position: relative;
+}
+
+.sub-img {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 10px;
+  width: 55%;
+  position: absolute;
+  left: 120px;
+  bottom: 120px;
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.sub-img img {
+  grid-column: span 3;
+  width: 70%;
+}
+.sub-text {
+  grid-column: span 5;
+  margin-top: 20px;
+}
+.sub-text h4 {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.sub-text p {
+  color: rgb(33, 33, 253);
+  text-transform: capitalize;
+  font-family: "source sans pro";
+  font-size: 14px;
+}
+.sub-video {
+  grid-column: span 4;
+  text-align: center;
+  place-items: center;
+  margin-top: 15px;
+}
+.sub-video img {
+  width: 50px;
+}
+.feature-2-text h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.feature-2-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+/*  */
+.feature-3-section {
+  padding: 70px 0 100px 0;
+  border-bottom: 3px solid gray;
+}
+.feature-3-grid {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.feature-3-text {
+  flex-basis: 45%;
+  padding: 20px;
+}
+.feature-3-text h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.feature-3-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.feature-4-section {
+  padding: 70px 0 100px 0;
+  border-bottom: 3px solid gray;
+}
+.feature-4-grid {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature-4-img {
+  flex-basis: 50%;
+}
+
+.feature-4-text {
+  flex-basis: 50%;
+  padding: 150px 20px 150px 0;
+}
+.feature-4-text h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.feature-4-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+
+/*  */
+
+.faq-section {
+  padding: 100px 0 100px 0;
+}
+
+.faq-heading {
+  text-align: center;
+}
+.faq-heading h1 {
+  font-family: "jost", sans-serif;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+label::after{
+  font: var(--fa-font-solid);
+  content: "\2b";
+}
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: rgba(45, 45, 45, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+.accordion{
+  padding-bottom: 20px;
+}
+.accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "jost", sans-serif;
+  font-size:  25px;
+  padding-bottom: 15px;
+  color: #ebebeb;
+  transition: all 0.5s;
+
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.accordion .content {
+  padding: 0 10px;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  font-family: "jost", sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  
+  
+}
+
+.accordion input[type="checkbox"]:checked +label + .content {
+  max-height: 1000px;
+  
+}
+.accordion input[type="checkbox"]:checked + label::after{
+  font: var(--fa-font-solid);
+  content: "\f00d"
+    
+}
+
+
+@media only screen and (max-width: 991px) {
+  .feature-1-section {
+    overflow-x: hidden;
+  }
+  nav{
+    margin: auto 10px;
+    max-width: none;
+  }
+  .logo img{
+    width: 35%;
+   
+  }
+  .button{
+    top: 0;
+    right: 0;
+  }
+  .hero-section {
+    height: auto;
+    padding-bottom: 100px;
+    padding-inline: 25px;
+  }
+
+  .hero-body {
+    margin-top: 100px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text h3 {
+    font-size: 14px;
+  }
+  .hero-text p {
+    font-size: 14px;
+  }
+  #email-input {
+    width: 80%;
+    margin-bottom: 15px;
+    height: 2vh;
+  }
+  .getStarted {
+    font-size: 16px;
+    padding: 0;
+    padding-inline: 25px;
+    height: 6vh;
+  }
+
+  .feature-1-text,
+  .feature-1-img {
+    grid-column: span 12;
+  }
+  .tv-img,
+  .tv-video {
+    width: 100%;
+  }
+  .tv-video {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+  .feature-1-text {
+    text-align: center;
+    padding: 0;
+    padding-inline: 30px;
+  }
+  .feature-1-text h1 {
+    font-size: 26px;
+  }
+  .feature-1-text h3 {
+    font-size: 15px;
+  }
+  .feature-1-section {
+    padding: 50px 0 50px 0;
+  }
+
+  /*  */
+
+  .feature-2-img,
+  .feature-2-text {
+    flex-basis: 100%;
+  }
+  .feature-2-grid {
+    flex-wrap: wrap-reverse;
+  }
+  .sub-img {
+    bottom: 0;
+    left: 100px;
+  }
+  .feature-2-text {
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    padding-inline: 30px;
+  }
+  .feature-2-text h1 {
+    font-size: 26px;
+  }
+  .feature-2-text h3 {
+    font-size: 15px;
+  }
+  .feature-2-section {
+    padding: 50px 0 50px 0;
+  }
+  .sub-img {
+    padding: 10px;
+  }
+  .sub-img img {
+    width: 55%;
+  }
+  .sub-text {
+    margin-top: 4px;
+  }
+  .sub-text p {
+    font-size: 12px;
+  }
+  .sub-text h4 {
+    font-size: 10px;
+  }
+  .sub-video {
+    margin-top: 3px;
+  }
+  .feature-3-section {
+    padding: 50px 0 80px 0;
+  }
+  .feature-3-text {
+    flex-basis: 100%;
+  }
+  .feature-3-text {
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    padding-inline: 35px;
+  }
+  .feature-3-text h1 {
+    font-size: 26px;
+  }
+  .feature-3-text h3 {
+    font-size: 16px;
+  }
+  .sub-img {
+    bottom: 0;
+    left: 80px;
+  }
+  .feature-4-img,
+  .feature-4-text {
+    flex-basis: 100%;
+  }
+  .feature-4-grid {
+    flex-wrap: wrap-reverse;
+  }
+
+  .feature-4-text {
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    padding-inline: 30px;
+  }
+  .feature-4-text h1 {
+    font-size: 26px;
+  }
+  .feature-4-text h3 {
+    font-size: 15px;
+  }
+  .feature-4-section {
+    padding: 50px 0 50px 0;
+  }
+  .feature-4-img img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /*  */
+
+  .faq-heading h1{
+    font-size: 26px;
+  }
+  .faq-container{
+    padding-inline: 30px;
+  }
+  .accordion li label{
+    font-size: 18px;
+
+
+  }
+  .faq-section{
+    padding: 50px 0 50px 0;
+  }
+  .accordion .content{
+    font-size: 17px;
+  }
+ 
+.accordion input[type="checkbox"]:checked +label + .content {
+  max-height: 1000px;
+  padding-top: 10px ;
+  
+}
+}
